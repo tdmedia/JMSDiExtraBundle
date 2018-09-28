@@ -82,7 +82,7 @@ class MetadataConverter
 
         $definition->setClass($classMetadata->name);
         if (null !== $classMetadata->scope) {
-            $definition->setScope($classMetadata->scope);
+            $definition->setShared($classMetadata->scope);
         }
         if (null !== $classMetadata->shared) {
             $definition->setShared($classMetadata->shared);
